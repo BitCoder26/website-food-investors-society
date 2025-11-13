@@ -1,0 +1,57 @@
+.top-nav {
+    background: #000;
+    padding: 20px 50px;
+    color: white;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-icon:hover {
+    color: inherit;
+}
+
+/* Default icons */
+.house-icon {
+    background-image: url("../../assets/icons/other/home_white.svg");
+}
+
+/* Hover page colour*/
+.house-icon:hover,
+.house-icon.current:hover {
+    background-image: url("../../assets/icons/other/home_green.svg") !important;
+}
+
+/* Current page colour*/
+.house-icon.current {
+    background-image: url("../../assets/icons/other/home_orange.svg");
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.top-nav a:hover {
+    color: #73FF00;
+}
+
+/* Current page link */
+.top-nav a.current {
+    color: #FFB300;
+}
+
+.top-nav .links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}

@@ -1,0 +1,96 @@
+.app-card {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0;                 /* ← REMOVE ALL padding */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    width: calc(100% - 100px);  /* accounting for left + right margins */
+    max-width: none;
+    overflow: hidden;
+}
+/* Rounded rectangle behind logo */
+.app-icon-wrapper {
+    flex-shrink: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #004000;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+.app-card:hover .app-icon-wrapper{
+    box-shadow: 0 0 20px rgba(73, 255, 0, 1);
+    scale: 1.03;
+    transition: 0.1s ease;
+}
+/* Both icons stack inside rectangle */
+.app-card .app-icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: opacity 0.02s ease;
+}
+/* default / hover logic stays the same */
+.app-card .default-icon { opacity: 1; }
+.app-card .hover-icon   { opacity: 0; }
+.app-card:hover .default-icon { opacity: 0; }
+.app-card:hover .hover-icon   { opacity: 1; }
+
+.app-info {
+    flex: 1;
+}
+.app-info h3 {
+    padding-left: 30px;
+    margin: 0;
+    font-size: 30px;
+    color: #004000;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+}
+.app-info p {
+    padding-left: 30px;
+    margin: 2px 0 0;
+    font-size: 20px;
+    color: #555;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+}
+.app-cta {
+    padding: 0 30px;                
+    flex: 0 0 35%;
+    width: auto;
+    align-self: stretch;
+    padding: 0 60px 0 0;
+    background: linear-gradient(90deg, #ffffff00, #FFB300);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 0 15px 15px 0;
+}
+/* Download button */
+.download-btn {
+    background: rgba(255,255,255,0.2);
+    border: 3px solid white;
+    border-radius: 40px;
+    padding: 15px 35px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.download-btn:hover {
+    background: white;
+    color: #FFB300;
+}

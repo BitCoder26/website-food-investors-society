@@ -1,0 +1,27 @@
+/* TOP NAV */
+
+/* 
+---- COLOURS ----
+page:         #F5F5F7 (off white)
+primary:      #004000 (green)
+secondary:    #FFB300 (orange)
+tertiary:     #73FF00 (light green)
+sticky notes: #FEE785 (yellow)
+*/
+
+html, body {
+    background: #F5F5F7;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+}
+
+/* Default font for all body text */
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Override all headings  */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter", sans-serif;
+}

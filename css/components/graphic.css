@@ -1,0 +1,12 @@
+.graphic-box {
+    background: white;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin: 0px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    margin-bottom: 40px;
+    font-family: "Inter", sans-serif;
+}

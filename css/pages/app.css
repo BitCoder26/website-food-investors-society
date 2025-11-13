@@ -1,0 +1,71 @@
+/* Page-only spacing */
+.is-this-you .container,
+.the-truth .container,
+.thats-why-foodX-exists .container {
+    padding-left: 50px;
+}
+
+/* Headers */
+.is-this-you h2,
+.the-truth h2,
+.thats-why-foodX-exists h2 {
+    margin-left: 10px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: #004000;
+}
+
+/* Text */
+.is-this-you li,
+.the-truth li,
+.thats-why-foodX-exists p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    font-family: "Work Sans", sans-serif;
+    color: #004000;
+}
+
+.thats-why-foodX-exists p {
+    padding-left: 10px;
+}
+
+.thats-why-foodX-exists p .highlight {
+    color: #FFB300;
+    font-weight: inherit;  
+}
+
+.is-this-you li,
+.the-truth li {
+    padding-left: 10px;
+    margin-left: 0;      
+}
+
+.is-this-you ul,
+.the-truth ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.is-this-you,
+.the-truth,
+.thats-why-foodX-exists {
+    margin-bottom: 60px;
+}
+
+.explore-the-app-features h2{
+    padding-left: 50px;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    color: #004000;
+}
+.explore-the-app-features p{
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    font-family: "IBM Plex Mono", monospace;
+    color: #004000;
+}
