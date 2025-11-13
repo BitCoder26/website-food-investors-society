@@ -1,0 +1,28 @@
+.main-footer {
+    font-size: 0.8rem;
+    padding: 20px 50px 50px;
+    background: black;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 10px;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+.main-footer .container a {
+    color: white;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.main-footer .container a:hover {
+    color: #73FF00;
+}

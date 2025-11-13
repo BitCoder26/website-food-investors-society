@@ -1,0 +1,48 @@
+.hero-section {
+    background: linear-gradient(
+        180deg,
+        #004000 0%,
+        #004000 30%,
+        #F5F5F7 100%
+    );
+    padding: 60px 50px;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-left h1 {
+    color: white;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.sticky-note p {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #FEE785;
+    padding: 20px 20px;
+    display: flex;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.35);
+    font-family: "Inter", sans-serif;
+}
+
+.hero-right {
+    text-align: right;
+    max-width: 300px;
+}
+
+.hero-right p {
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+}
