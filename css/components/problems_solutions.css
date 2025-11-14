@@ -8,6 +8,7 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 0px;
+    overflow: visible;
 }
 
 .problems-solutions-card {
@@ -25,7 +26,14 @@
     align-items: center;
     justify-content: center; 
     overflow: hidden;
+    transition: transform 0.25s ease;
 }
+
+.problems-solutions-card:hover {
+    background: #003F00;
+    transform: scale(1.02);
+}
+
 
 
 /* ICONS */
