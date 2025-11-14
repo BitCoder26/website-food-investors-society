@@ -1,57 +1,41 @@
-/* Page-only spacing */
-.is-this-you .container,
-.the-truth .container,
-.thats-why-foodX-exists .container {
+/* Text */
+.be-honest,
+.thats-why-foodX-exists {
+    line-height: 1.2;
+    margin-bottom: 0px;
     padding-left: 50px;
 }
 
-/* Headers */
-.is-this-you h2,
-.the-truth h2,
-.thats-why-foodX-exists h2 {
-    margin-left: 10px;
-    font-weight: 600;
-    font-family: "Inter", sans-serif;
-    font-size: 30px;
-    color: #004000;
+.thats-why-foodX-exists p{
+    margin-bottom: 50px;
 }
 
-/* Text */
-.is-this-you li,
-.the-truth li,
+.be-honest h2,
+.thats-why-foodX-exists h2 {
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+    margin-bottom: 0px;
+}
+
+.be-honest p,
 .thats-why-foodX-exists p {
     font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 5px;
     font-family: "Work Sans", sans-serif;
     color: #004000;
 }
 
-.thats-why-foodX-exists p {
-    padding-left: 10px;
-}
-
-.thats-why-foodX-exists p .highlight {
+.app-name {
+    font-weight: 900;    
     color: #FFB300;
-    font-weight: inherit;  
 }
 
-.is-this-you li,
-.the-truth li {
-    padding-left: 10px;
-    margin-left: 0;      
-}
-
-.is-this-you ul,
-.the-truth ul {
-    padding-left: 0;
-    list-style-position: inside;
-}
-
-.is-this-you,
-.the-truth,
-.thats-why-foodX-exists {
-    margin-bottom: 60px;
+.explore-the-app-features-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-top: 0px;
 }
 
 .explore-the-app-features h2{
@@ -62,10 +46,128 @@
 }
 .explore-the-app-features p{
     padding-left: 50px;
+    margin-top: 15px;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 5px;
     font-family: "IBM Plex Mono", monospace;
     color: #004000;
+}
+
+
+/* /////// TRY THE FEATURES /////// */
+.features-list {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    background: #F5F5F7;
+}
+
+.features-list-header-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 0px;
+}
+
+.features-list h2 {
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+    margin-bottom: 0px;
+}
+
+.features-subtext {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+    color: #004000;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* FEATURE CARD */
+.feature-card {
+    display: flex;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+    height: 300px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18); /* optional: deeper shadow */
+}
+
+/* FEATURE IMAGE */
+.feature-image {
+    flex: 1 1 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TEXT AREA */
+.feature-content {
+    width: 70%;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.feature-text-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    max-width: 480px;
+}
+
+.feature-content a {
+    text-decoration: none;
+}
+
+.feature-content h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #004000;
+    margin-bottom: 25px;
+}
+
+.feature-content p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    color: #004000;
+    line-height: 1.4;
+    margin-top: 0px;
+}
+
+/* BUTTON */
+.try-btn {
+    margin-right: 20px;
+    width: 70px;
+    height: 53px;
+    background: rgba(255,255,255,0.2);
+    border: 3px solid #FFB300;
+    border-radius: 50px;
+    padding: 0 30px; 
+    color: #FFB300;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+}
+
+.try-btn:hover {
+    background: #FFB300;
+    color: white;
 }
