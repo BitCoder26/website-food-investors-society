@@ -9,6 +9,15 @@ tertiary:     #73FF00 (light green)
 sticky notes: #FEE785 (yellow)
 */
 
+/* 
+---- FONTS ----
+headers:        "Inter", sans-serif;
+body:           "Work Sans", sans-serif;
+data/financial: "IBM Plex Mono", monospace;
+
+Note: try to keep font sizes + weights consistent
+*/
+
 html, body {
     background: #F5F5F7;
     margin: 0;
