@@ -6,13 +6,20 @@
     display: flex;
     align-items: center;
     background: white;
-    padding: 0;                 /* ← REMOVE ALL padding */
-    border-radius: 20px;
+    padding: 0;            
+    border-radius: 30px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    width: calc(100% - 100px);  /* accounting for left + right margins */
+    width: calc(100% - 100px); 
     max-width: none;
     overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.app-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18); /* optional shadow boost */
+}
+
 /* Rounded rectangle behind logo */
 .app-icon-wrapper {
     flex-shrink: 0;
@@ -30,9 +37,8 @@
     overflow: hidden; 
 }
 .app-card:hover .app-icon-wrapper{
-    box-shadow: 0 0 20px rgba(73, 255, 0, 1);
-    scale: 1.03;
-    transition: 0.1s ease;
+    scale: 1.07;
+    transition: 0.3s ease;
 }
 /* Both icons stack inside rectangle */
 .app-card .app-icon {
@@ -73,24 +79,50 @@
     width: auto;
     align-self: stretch;
     padding: 0 60px 0 0;
-    background: linear-gradient(90deg, #ffffff00, #FFB300);
+    /* background: linear-gradient(90deg, #ffffff00, #FFB300); */
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 30px 30px 0;
 }
+
+.apple-glow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 47px;        /* fine tune for perfect alignment */
+    left: 45px;       /* adjust this too */
+    fill: #73FF00;    /* neon green */
+    opacity: 0;       /* hidden by default */
+    pointer-events: none;
+    filter: drop-shadow(0 0 0px #73FF00);
+    transition: 0.2s ease;
+}
+
+/* Only show glow apple on hover */
+.app-card:hover .apple-glow {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #73FF00)
+            drop-shadow(0 0 18px #73FF00);
+}
+
+
 /* Download button */
 .download-btn {
     background: rgba(255,255,255,0.2);
-    border: 3px solid white;
-    border-radius: 40px;
+    border: 3px solid #FFB300;
+    border-radius: 50px;
     padding: 15px 35px;
-    color: white;
+    color: #FFB300;
     font-size: 25px;
     cursor: pointer;
     transition: 0.2s ease;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+
 }
 .download-btn:hover {
-    background: white;
-    color: #FFB300;
+    background: #FFB300;
+    color: white;
 }
