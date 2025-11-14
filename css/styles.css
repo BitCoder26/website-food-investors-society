@@ -15,9 +15,9 @@
 -------------------------------------------------
 */
 /* THE APP */
-@import url("pages/app.css");
 @import url("components/feature_slider.css");
 @import url("components/problems_solutions.css");
 @import url("components/get_the_app_card.css");
+@import url("pages/app.css");
 
 /* JOIN US */
