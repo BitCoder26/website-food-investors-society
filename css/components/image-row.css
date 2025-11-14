@@ -38,6 +38,14 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .testimonial-header h2 {
@@ -60,8 +68,8 @@
 
 .testimonial-card {
     background: white;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 25px;
     padding: 50px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);

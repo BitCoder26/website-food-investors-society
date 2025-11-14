@@ -1,7 +1,7 @@
 /* EACH SLIDE IS FULL SCREEN WITH GRADIENT */
 .slide {
     min-width: 100%;
-    height: 100vh; /* full screen slides */
+    height: 680px; /* full screen slides */
     box-sizing: border-box;
     position: relative; /* so arrows anchor correctly */
     display: flex;
@@ -18,7 +18,7 @@
     margin-left: 0px;
 }
 .feature-left img {
-    width: 600px;
+    width: 610px;
     height: auto;
 }
 
@@ -58,8 +58,8 @@
 
 /* RIGHT SIDE TEXT BLOCK */
 .feature-right {
-    margin-left: -100px;  /* adjust as needed */
-    margin-bottom: -50px; /* adjust as needed */
+    margin-left: -130px;
+    margin-bottom: -50px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -122,6 +122,7 @@
 .features-slider {
     position: relative;
     overflow: hidden;
+    margin-top: 10px;
 }
 
 .slider-wrapper {
@@ -132,4 +133,24 @@
 .slides {
     display: flex;
     transition: transform 0.5s ease;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #004000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.25s;
+}
+
+.dot.active {
+    background: #FFB300;
 }

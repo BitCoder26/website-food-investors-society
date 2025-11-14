@@ -8,9 +8,16 @@
 @import url("components/newsletter.css");
 @import url("components/social.css");
 @import url("components/footer.css");
-@import url("components/get_the_app_card.css");
-@import url("components/feature_slider.css");
 
-
-/* Page-specific styling */
+/* 
+-------------------------------------------------
+------------- Page-specific styling ------------- 
+-------------------------------------------------
+*/
+/* THE APP */
 @import url("pages/app.css");
+@import url("components/feature_slider.css");
+@import url("components/problems_solutions.css");
+@import url("components/get_the_app_card.css");
+
+/* JOIN US */
