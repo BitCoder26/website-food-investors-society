@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    overflow: hidden;
+    overflow: visible;
     transition: transform 0.25s ease;
 }
 

@@ -1,8 +1,11 @@
 .newsletter-section {
+    position: relative;
     background: black;
     color: white;
     padding: 20px 50px;
     font-family: "Inter", sans-serif;
+    overflow: hidden;
+    display: flow-root;
 }
 
 .newsletter-section a {
@@ -16,4 +19,9 @@
 
 .newsletter-section a:hover {
     color: #73FF00;
+}
+
+.newsletter-section *::selection {
+    background: #333;     /* same black-ish so no leak is visible */
+    color: white;
 }

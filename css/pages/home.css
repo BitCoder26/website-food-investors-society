@@ -1,0 +1,74 @@
+/* /////// HERO HOME /////// */
+.hero-section-home .hero-left img {
+    height: 104px;
+    scale: 1.5;
+    width: auto;
+    margin-top: 0; 
+    margin-left: 25px;
+}
+
+.hero-section-home {
+    height: 150px;
+}
+
+.hero-section-home .hero-right {
+    margin-bottom: 10px;
+    text-align: right;
+    max-width: 600px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section-home .hero-right img {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.hero-section-home .hero-right p {
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+}
+
+
+
+/* /////// TRADE EAT LIVE /////// */
+.trade-eat-live {
+    line-height: 1.2;
+    margin-bottom: 50px;
+    padding-left: 50px;
+}
+
+.thats-why-foodX-exists p{
+    margin-bottom: 50px;
+}
+
+.trade-eat-live h2 {
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+    margin-bottom: 0px;
+}
+
+.trade-eat-live p {
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+    color: #004000;
+}
+
+.brand-orange {
+    color: #FFB300;
+}
+
+.start-learning {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.app-icon-wrapper {
+    overflow: visible;   /* allows glow + large SVG to spill outside */
+}

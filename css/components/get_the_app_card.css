@@ -11,12 +11,12 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     width: calc(100% - 100px); 
     max-width: none;
-    overflow: hidden;
+    overflow: visible;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .app-card:hover {
-    transform: scale(1.01);
+    transform: scale(1.006);
     box-shadow: 0 8px 25px rgba(0,0,0,0.18); /* optional shadow boost */
 }
 
@@ -34,10 +34,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
+    overflow: visible; 
 }
 .app-card:hover .app-icon-wrapper{
-    scale: 1.07;
+    scale: 1.05;
     transition: 0.3s ease;
 }
 /* Both icons stack inside rectangle */
@@ -120,9 +120,37 @@
     font-size: 20px;
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
-
+    text-decoration: none
 }
 .download-btn:hover {
     background: #FFB300;
     color: white;
+}
+
+/**/
+/* Inline SVG sizing (same size as old icons) */
+/* DONATE ICON FIXES */
+/* FINAL DONATE ICON SIZING + CENTERING */
+.donate-icon {
+    width: 78px;
+    height: auto;
+    display: block;
+    transform: translateY(6px);
+}
+
+.donate-icon .heart {
+    fill: white;
+    transition: 0.25s ease;
+}
+
+.app-card:hover .donate-icon .heart {
+    fill: #73FF00;
+    filter: drop-shadow(0 0 20px #73FF00);
+}
+
+.try-btn {
+    display: inline-block;
+    padding: 12px 30px; 
+    min-width: 110px;  
+    text-align: center;
 }

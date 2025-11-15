@@ -99,7 +99,7 @@
 }
 
 .feature-card:hover {
-    transform: scale(1.01);
+    transform: scale(1.006);
     box-shadow: 0 8px 25px rgba(0,0,0,0.18); /* optional: deeper shadow */
 }
 
