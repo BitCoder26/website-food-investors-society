@@ -14,6 +14,11 @@
 ------------- Page-specific styling ------------- 
 -------------------------------------------------
 */
+
+/* HOME */ 
+@import url("pages/home.css");
+
+
 /* THE APP */
 @import url("components/feature_slider.css");
 @import url("components/problems_solutions.css");
