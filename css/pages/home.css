@@ -33,8 +33,6 @@
     font-size: 18px;
 }
 
-
-
 /* /////// TRADE EAT LIVE /////// */
 .trade-eat-live {
     line-height: 1.2;
@@ -63,12 +61,58 @@
     color: #FFB300;
 }
 
-.start-learning {
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+/* ////////////// MAIN CARDS ////////////// */
+/* /////// MAIN CARDS (MATCH VALUE CARDS EXACTLY) /////// */
+.home-main-card .image-card {
+    background: #004000;
+    height: 300px;
+    gap: 20px;
+    max-width: 100%;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-right: 15px;
 }
 
-.app-icon-wrapper {
-    overflow: visible;   /* allows glow + large SVG to spill outside */
+/* ICON */
+.home-main-card .image-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; 
+    margin-top: 100px;
+}
+
+.home-main-card .image-card h1 {
+    margin-bottom: 120px;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* HOVER CARD FUNCTIONALITY*/
+.home-main-card .card-link,
+.home-main-card .card-link h1,
+.home-main-card .card-link:hover,
+.home-main-card .card-link h1:hover {
+    text-decoration: none !important;
+}
+
+/* Icon glow when hovering the entire card */
+.home-main-card .card-link:hover .image-card img {
+    filter: drop-shadow(0 0 12px #73FF00);
+    transition: filter 0.25s ease;
+}
+
+.home-main-card .card-link {
+    display: block;
+    transform: scale(1);
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.home-main-card .card-link:hover {
+    transform: scale(1.01);
+}
+
+.home-main-card .card-link:hover .image-card {
+    background-color: #004000;
+    transition: background-color 0.25s ease;
 }
