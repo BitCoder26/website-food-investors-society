@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body class="home-page">
 
     <!-- 
     /////////////////////// TOP NAV ///////////////////////
@@ -16,9 +16,9 @@
         <div class="container nav-content">
         <div class="links">
             <a href="index.html" class="nav-icon house-icon current"></a>
-            <a href="the-app.html">The App</a>
+            <a href="the-app.html">App</a>
             <a href="foodX100.html">FoodX100</a>
-            <a href="my-foodX-community.html">My Food Community</a>
+            <a href="my-foodX-community.html">My FoodX Community</a>
             <a href="cook.html">Cook</a>
             <a href="join-us.html">Join Us</a>
             <a href="about-us.html">About Us</a>
@@ -36,7 +36,7 @@
             </div>
             <div class="hero-right">
                 <p>The wHealth market is open<br>Build wHealth, one bite at a time</p>
-                <img src="assets/icons/other/graph_white.svg" class="icon graph-hero">
+                <img src="assets/icons/logo/apple_white.svg" class="icon graph-hero">
             </div>
         </div>
     </header>
@@ -55,14 +55,38 @@
     </section>
 
    <!-- 
-    //////////////// HOME PAGE IMAGES ROW ////////////////
+    //////////////// HOME PAGE CARD ROW ////////////////
     -->    
     <section class="home-slideshow-wrapper">
         <section class="slideshow">
             <div class="container row-content">
-                <div class="image-card">Check the app<br>-> (image/icon + text?)</div>
-                <div class="image-card">Explore the FoodX100<br>-> (image/icon + text?)</div>
-                <div class="image-card">Explore the FoodX - My Neighbourhood<br>-> (image/icon + text?)</div>
+                <!-- main card 1: get the app -->
+                <div class="home-main-card">
+                    <a href="the-app.html" class="card-link">
+                        <div class="image-card">
+                            <img src="assets/icons/home/app_neon.svg" alt="app icon" class="feature-image">
+                            <h1>FoodXChange</h1>
+                        </div>
+                    </a>
+                </div>
+                <!-- main card 2: explore foodX-->
+                <div class="home-main-card">
+                    <a href="foodx100.html" class="card-link">
+                        <div class="image-card">
+                            <img src="assets/icons/home/foodx_neon.svg" alt="app icon" class="feature-image">
+                            <h1>FoodX100</h1>
+                        </div>
+                    </a>
+                </div>
+                <!-- main card 3: try my foodX my neighbourhood -->
+                <div class="home-main-card">
+                    <a href="my-foodx-community.html" class="card-link">
+                        <div class="image-card">
+                            <img src="assets/icons/home/my_neighbourhood_neon.svg" alt="app icon" class="feature-image">
+                            <h1>FoodX - My Neighbourhood</h1>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </section>
