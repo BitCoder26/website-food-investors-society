@@ -69,7 +69,7 @@
     padding-left: 30px;
     margin: 2px 0 0;
     font-size: 20px;
-    color: #555;
+    color: #004000;
     font-family: "Work Sans", sans-serif;
     font-size: 20px;
 }
@@ -90,10 +90,10 @@
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 47px;        /* fine tune for perfect alignment */
-    left: 45px;       /* adjust this too */
-    fill: #73FF00;    /* neon green */
-    opacity: 0;       /* hidden by default */
+    top: 47px; 
+    left: 45px; 
+    fill: #73FF00;
+    opacity: 0;
     pointer-events: none;
     filter: drop-shadow(0 0 0px #73FF00);
     transition: 0.2s ease;

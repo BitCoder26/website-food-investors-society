@@ -1,5 +1,5 @@
 /* /////// LETS BE HONEST ETC TEXT /////// */
-.be-honest,
+.main-text,
 .thats-why-foodX-exists {
     line-height: 1.2;
     margin-bottom: 0px;
@@ -10,7 +10,7 @@
     margin-bottom: 50px;
 }
 
-.be-honest h2,
+.main-text h2,
 .thats-why-foodX-exists h2 {
     font-size: 32px;
     font-family: "Inter", sans-serif;
@@ -18,7 +18,7 @@
     margin-bottom: 0px;
 }
 
-.be-honest p,
+.main-text p,
 .thats-why-foodX-exists p {
     font-size: 20px;
     font-family: "Work Sans", sans-serif;
@@ -92,7 +92,7 @@
     border-radius: 25px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     height: 300px;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }

@@ -1,5 +1,9 @@
+/* 
+-------------------------------------------------
+---------------- General styling ---------------- 
+-------------------------------------------------
+*/
 @import url("base/reset.css");
-
 @import url("components/nav.css");
 @import url("components/hero.css");
 @import url("components/subtext.css");
@@ -8,6 +12,7 @@
 @import url("components/newsletter.css");
 @import url("components/social.css");
 @import url("components/footer.css");
+@import url("components/get_the_app_card.css"); /* used for donation card too*/
 
 /* 
 -------------------------------------------------
@@ -18,15 +23,28 @@
 /* HOME */ 
 @import url("pages/home.css");
 
-
-/* THE APP */
+/* APP */
 @import url("components/feature_slider.css");
 @import url("components/problems_solutions.css");
-@import url("components/get_the_app_card.css");
 @import url("pages/app.css");
 
+/* FOODX100 */
+@import url("pages/foodx100.css");
+
+/* FOODX MY COMMUNITY */
+@import url("pages/my_foodx_community.css");
+
+/* COOK */
+@import url("pages/cook.css");
+
 /* JOIN US */
+@import url("pages/join.css");
 
-
-/* ABOUT US */
+/* MISC */
+@import url("pages/contact.css");
+@import url("pages/donation.css");
 @import url("pages/about-us.css");
+@import url("pages/articles.css");
+@import url("pages/privacy_policy.css");
+@import url("pages/cookies.css");
+@import url("pages/business.css");

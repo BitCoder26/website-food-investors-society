@@ -1,0 +1,96 @@
+/* PAGE / SECTION */
+.main-text-cook {
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/* LAYOUT */
+.main-text-cook .container-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* HEADER TEXT */
+.main-text-cook h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    color: #004000;
+}
+
+.main-text-cook > .container > p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    color: #004000;
+    padding-bottom: 20px;
+}
+
+/* CARDS */
+.main-text-cook .cook-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 350px;
+    background-color: #004000;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* MAKE <a> BE THE LAYOUT HOLDER */
+.main-text-cook .card-link {
+    display: block;
+    width: 50%;
+    text-decoration: none;
+}
+
+/* ICON */
+.main-text-cook .cook-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-top: 110px;
+}
+
+/* TEXT INSIDE CARD */
+.main-text-cook .cook-card h1 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-text-cook .cook-card p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+
+/* HOVER EFFECTS */
+.main-text-cook .card-link:hover .cook-card img {
+    filter: drop-shadow(0 0 8px #73FF00);
+    transition: filter 0.25s ease;
+}
+
+.main-text-cook .card-link:hover {
+    transform: scale(1.01);
+    transition: transform 0.25s ease;
+}
+
+.main-text-cook .card-link:hover .cook-card {
+    background-color: #005000;
+    transition: background-color 0.25s ease;
+}
+
+.orange-text {
+    color: #FFB300;
+}

@@ -1,0 +1,37 @@
+.footer-privacy .container {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-privacy .container .row {
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-privacy .container h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: #004000
+}
+
+.footer-privacy .container h2 span {
+    color: #FFB300;
+}
+
+.footer-privacy .container .row-right {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    width: 50%; 
+    color: #004000
+}
+
+.footer-privacy .container .row-left {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    width: 50%; 
+    color: #004000
+}
