@@ -1,0 +1,45 @@
+/* DONATION FORM */
+.donation h2{
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-top: 200px;
+}
+
+/* Donate button */
+.donation-box {
+    height: 500px;
+    margin: 50px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    justify-content: space-between;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Donate button */
+.donate-btn {
+    display: inline-block; 
+    margin-top: 20px;
+    background: rgba(255,255,255,0.2);
+    border: 3px solid #FFB300;
+    border-radius: 50px;
+    padding: 15px 35px;
+    color: #FFB300;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.donate-btn:hover {
+    background: #FFB300;
+    color: white;
+}
