@@ -1,16 +1,15 @@
-/* /////// HERO HOME /////// */
-.hero-section-home .hero-left img {
+/* ------------------------------------------
+------------------------ HERO 
+---------------------------------------------*/.hero-section-home .hero-left img {
     height: 100px;
     scale: 1.5;
     width: auto;
     margin-top: -10px; 
     margin-left: 25px;
 }
-
 .hero-section-home {
     height: 150px;
 }
-
 .hero-section-home .hero-right {
     margin-top: -8px;
     text-align: right;
@@ -20,67 +19,64 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .hero-section-home .hero-right img {
     width: 40px;
     height: 40px;
     color: white;
 }
-
 .hero-section-home .hero-right p {
     color: white;
     font-family: "IBM Plex Mono", monospace;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 100;
 }
 
-/* /////// TRADE EAT LIVE /////// */
+/* ------------------------------------------
+---------- HEADER: TRADE - EAT - LIVE 
+---------------------------------------------*/
 .trade-eat-live {
     line-height: 1.2;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     padding-left: 50px;
 }
-
 .thats-why-foodX-exists p{
     margin-bottom: 50px;
 }
-
 .trade-eat-live h2 {
-    font-size: 32px;
+    font-size: 25px;
+    font-weight: 800;
     font-family: "Inter", sans-serif;
     color: #004000;
     margin-bottom: 0px;
 }
-
 .trade-eat-live p {
     font-size: 20px;
+    font-weight: 100;
     font-family: "Work Sans", sans-serif;
     color: #004000;
 }
-
-.brand-orange {
-    color: #FFB300;
-}
-
-/* PAGE / SECTION */
+/* Page / Section */
 .main-text-home {
     margin-right: 50px;
     margin-left: 50px;
 }
-
-/* LAYOUT */
+/* Layout */
 .main-text-home .container-row {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    width: 100%;
 }
-
-/* HEADER TEXT */
+.main-text-home .container-row img {
+    width: 50px;
+    height: 50px;
+}
+/* Header Text */
 .main-text-home h2 {
     font-family: "Inter", sans-serif;
-    font-size: 32px;
+    font-size: 25px;
     color: #004000;
 }
-
 .main-text-home > .container > p {
     font-family: "Work Sans", sans-serif;
     font-size: 20px;
@@ -88,71 +84,376 @@
     padding-bottom: 20px;
 }
 
-/* /////// CARDS /////// */
-.main-text-home .main-card {
+/* ------------------------------------------
+--------- PHONE SCREEN + EXPLORE BUTTON 
+---------------------------------------------*/
+/* LEFT */
+.get-the-app {
+    margin-top: -30px;
+    padding-left: 120px;
+}
+.get-the-app .row-inner {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 350px;
-    background-color: #004000;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
-
-/* MAKE <a> BE THE LAYOUT HOLDER */
-.main-text-home .card-link {
-    display: block;
-    width: 33.33%;
-    text-decoration: none;
-}
-
-/* ICON */
-.main-text-home .main-card img {
+.get-the-app .row-inner img {
     width: 50px;
     height: 50px;
-    object-fit: contain;
-    margin-top: 110px;
+    color: #004000;
+    margin-right: 30px;
 }
-
-/* TEXT INSIDE CARD */
-.main-text-home .main-card h1 {
+.phone-screen-box .row {
+    display: flex;
+    margin-bottom: 80px;
+}
+.phone-screen-box .left-phone-screen {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 520px;
+    height: 520px;
+    /* transform: rotate(4deg); */
+}
+/* phone shadow */
+.phone-shadow {
+    position: absolute;
+    bottom: -450px;
+    left: 270px;
+    transform: none;
+    width: 320px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.25);
+    filter: blur(20px);
+    border-radius: 50%;
+    z-index: 1;
+}
+/* RIGHT */
+.phone-screen-box .row .right-column{
+    margin-top: 80px;
+    flex: 1;       
+}
+.phone-screen-box .row .right-column h1{
+    margin-top: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    color: #FFB300;
+    margin-bottom: -20px;
+}
+.phone-screen-box .row .right-column h2{
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #004000;
+}
+.phone-screen-box .row .right-column p{
     font-family: "Work Sans", sans-serif;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 100;
+    color: #004000;
+}
+/* Button: Explore app */
+.explore-app {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    display: flex;
+}
+.explore-app p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #004000;
+    text-decoration: none;
+    justify-content: center;   
+}
+/* Download badges (diabled) */
+.download-row {
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.app-store-badge {
+    width: 130px;
+    height: 130px;
+}
+.google-play-badge {
+    width: 145px;
+    height: 145px;
+}
+/* explore app button */
+.explore-btn {
+    background: rgba(255,255,255,0.2);
+    border: 3px solid #FFB300;
+    border-radius: 50px;
+    padding: 15px 35px;
+    color: #FFB300;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;  
+    text-align: center; 
+    margin-top: 20px;
+}
+.explore-btn:hover {
+    background: #FFB300;
     color: white;
+}
+
+/* ----------------------------------------
+--------------- FOOD ANALYSIS
+------------------------------------------*/
+.food-analysis {
+    margin-top: 180px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0;
+}
+.analysis-wrapper {
+    position: relative;
+    width: 1100px;
+    height: 400px; 
+}
+.food-analysis .food-analysis-box h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    color: #004000;
+}
+.food-icon {
+    position: absolute;
+    top: 65%;
+    left: 62%;
+    transform: translate(-50%, -90%);
+    width: 170px;
+}
+.healthy-icon {
+    position: absolute;
+    top: 75%;
+    left: 34%;
+    transform: translate(-50%, -90%);
+    width: 180px;
+}
+.arrow-icon {
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    transform: translate(-50%, -90%);
+    width: 100px;
+    transform: rotate(-10deg);
+}
+
+.analysis-box {
+    position: absolute;
+    background: white;
+    padding: 10px 18px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    font-weight: 600;
+    color: #004000;
+}
+/* INDIVIDUAL POSITIONS */
+.box1 { top: 1%; left: 71%; }
+.box2 { top: 12%; left: 75%; width: 210px }
+.box3 { top: 23%; left: 77%; width: 100; background-color: #FFB300; color: white;}
+.box4 { top: 34%; left: 78%; width: 200; background-color: #ff4d00; color: white;}
+.box5 { top: 45%; left: 78%; background-color: #ff8800; color: white;}
+.box6 { top: 56%; left: 77%; }
+.box7 { top: 67%; left: 74%; }
+.box8 { top: 78%; left: 70%; width: 175px}
+
+.box9 { top: 16%; right: 70%; }
+.box10 { top: 27%; right: 73%; width: 210px }
+.box11 { top: 38%; right: 76%; width: 100; background-color: #007000; color: white;}
+.box12 { top: 49%; right: 77%; background-color: #004000; color: white;}
+.box13 { top: 60%; right: 78%; background-color: #00a62a; color: white;}
+.box14 { top: 71%; right: 77%; }
+.box15 { top: 82%; right: 76%; }
+.box16 { top: 93%; right: 72%; width: 175px}
+
+/* ----------------------------------------
+--------------- APP FEATURES
+------------------------------------------*/
+.app-features-try {
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+}
+.app-features-try .features-row h2{
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #004000;
     text-align: center;
+}
+.app-features-try .row {
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.app-features-try .row .feature-item img {
+    width: 50px;
+    height: 50px;
+    color: #004000;
+    margin-top: 90px;
+}
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+    margin-bottom: 25px;
+    width: 33.33%;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: flex-start;
+}
+.feature-item h1{
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFB300;
+}
+.feature-item h2 {
+    margin-top: -10px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px !important;;
+    font-weight: 400 !important;
+    color: #FFB300 !important;
+    text-align: left !important;
+}
+.feature-item p {
+    margin-top: -10px;
+    color: #004000;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 100;
+}
+.right-column-try-features {
+    margin-left: 20px;
+}
+.icon-wrapper {
+    position: relative; 
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-icon {
+    width: 100%;
+    height: 100%;
+}
+/* feature icon shadow */
+.feature-shadow {
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.9);
+    filter: blur(8px);
+    border-radius: 50%;
+    z-index: 0;
+}
+.row-buttons {
+    display: flex;
+    justify-content: space-between; 
+    width: 82%;
+    margin-left: 90px;
+    margin-right: 50px;
+    margin-top: -30px;
+}
+/* open app button */
+.open-btn {
+    background: rgba(255,255,255,0.2);
+    border: 3px solid #FFB300;
+    border-radius: 50px;
+    padding: 15px 35px;
+    color: #FFB300;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;  
+    text-align: center; 
+    margin-top: 20px;
+}
+.open-btn:hover {
+    background: #FFB300;
+    color: white;
+}
+
+/* ----------------------------------------
+----------------- JOIN US
+------------------------------------------*/
+
+.join-society {
+    background: #004000;
+    padding: 100px 50px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 120px;
+    height: 350px;
+    
+}
+
+.join-society h1 {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.join-society p {
+    font-family: "Work Sans", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.join-cta-btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #004000;
+    padding: 18px 50px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
     margin-top: 20px;
 }
 
-.main-text-home .main-card p {
-    font-family: "Work Sans", sans-serif;
-    font-size: 15px;
-    font-weight: 100;
-    color: white;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 30px;
+.join-cta-btn:hover {
+    background: #ffffff;
+    color: #004000;
 }
 
 
-/* HOVER EFFECTS */
-.main-text-home .card-link:hover .main-card img {
-    filter: drop-shadow(0 0 8px #73FF00);
-    transition: filter 0.25s ease;
-}
 
-.main-text-home .card-link:hover {
-    transform: scale(1.01);
-    transition: transform 0.25s ease;
-}
+/* ----------------------------------------
+----------------- TEXT RELATED 
+------------------------------------------*/
 
-.main-text-home .card-link:hover .main-card {
-    background-color: #005000;
-    transition: background-color 0.25s ease;
-}
-
-.orange-text {
+.text-orange-bold {
     color: #FFB300;
+    font-weight: 500;
+}
+
+.text-bold {
+    font-weight: 500;
 }
