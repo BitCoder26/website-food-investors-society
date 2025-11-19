@@ -1,0 +1,197 @@
+/* ------------------------------------------
+---- HERO (ADJUSTMENT FROM MAIN COMPONENT) 
+---------------------------------------------*/
+.hero-section-app .hero-right  {
+    margin-bottom: -10px;
+}
+/* ------------------------------------------
+-------------- TAGLINE 
+---------------------------------------------*/
+.tagline .tagline-m1 {
+    line-height: 1.2;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+.tagline .tagline-m1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+    margin-bottom: 0px;
+}
+.tagline .tagline-m1 p {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Work Sans", sans-serif;
+    color: #004000;
+}
+/* ------------------------------------------
+-------------- VALUE 
+---------------------------------------------*/
+.value .value-m1 {
+    line-height: 1.2;
+    margin-bottom: 60px;
+    padding-left: 50px;
+}
+.value .value-m1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+    margin-bottom: 0px;
+}
+.value .value-m1 p {
+    font-size: 20px;
+    font-weight: 00;
+    font-family: "Work Sans", sans-serif;
+    color: #004000;
+}
+/* ------------------------------------------
+------------ BENEFITS + DETAILS
+---------------------------------------------*/
+/* wrapper (benefits + details */
+.wrapper {
+    display: flex;
+    margin-top: -30px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    width: 100%;
+}
+/* benefits */
+.wrapper .benefits-box {
+    width: 50%;
+}
+.wrapper .benefits-box .benefits-m1 {
+    line-height: 1.2;
+    padding-left: 50px;
+}
+.wrapper .benefits-box .benefits-m1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+    margin-bottom: 0px;
+}
+.wrapper .benefits-box .benefits-m1 p {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+    color: #004000;
+}
+/* details */
+.wrapper .details-box {
+    width: 50%;
+    margin-left: -50px;
+}
+.wrapper .details-box .details-m1 {
+    line-height: 1.2;
+    padding-left: 50px;
+}
+.wrapper .details-box .details-m1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+    margin-bottom: 0px;
+}
+.wrapper .details-box .details-m1 p {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+    color: #004000;
+}
+
+/* ------------------------------------------
+-------------- FORM 
+---------------------------------------------*/
+.form-wrapper {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+    color: #004000;
+
+}
+form {
+    box-sizing: border-box;
+    width: 96%;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    padding: 40px 50px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    font-family: inherit;
+}
+form h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #004000; /* your brand green */
+    font-size: 1.2rem;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+.form-group {
+    flex: 1; /* makes both inputs equal width */
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 100;
+    color: #333;
+}
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 100;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #d7d7d7;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 6px;
+    transform: translateY(1px);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background: #004000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #006600;
+}
+
+
+/* ADMIN */
+.admin-only {
+    display: none;
+}
