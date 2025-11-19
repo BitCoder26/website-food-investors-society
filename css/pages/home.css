@@ -4,14 +4,14 @@
     height: 100px;
     scale: 1.5;
     width: auto;
-    margin-top: -10px; 
+    margin-top: 19px; 
     margin-left: 25px;
 }
 .hero-section-home {
     height: 150px;
 }
 .hero-section-home .hero-right {
-    margin-top: -8px;
+    margin-top: 27px;
     text-align: right;
     max-width: 600px;
     display: flex;
@@ -20,8 +20,8 @@
     justify-content: space-between;
 }
 .hero-section-home .hero-right img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     color: white;
 }
 .hero-section-home .hero-right p {
@@ -32,18 +32,15 @@
 }
 
 /* ------------------------------------------
----------- HEADER: TRADE - EAT - LIVE 
+-------- HEADER: INVEST IN FOOD TEXT 
 ---------------------------------------------*/
 .trade-eat-live {
     line-height: 1.2;
     margin-bottom: 40px;
     padding-left: 50px;
 }
-.thats-why-foodX-exists p{
-    margin-bottom: 50px;
-}
 .trade-eat-live h2 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 800;
     font-family: "Inter", sans-serif;
     color: #004000;
@@ -59,29 +56,6 @@
 .main-text-home {
     margin-right: 50px;
     margin-left: 50px;
-}
-/* Layout */
-.main-text-home .container-row {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 100%;
-}
-.main-text-home .container-row img {
-    width: 50px;
-    height: 50px;
-}
-/* Header Text */
-.main-text-home h2 {
-    font-family: "Inter", sans-serif;
-    font-size: 25px;
-    color: #004000;
-}
-.main-text-home > .container > p {
-    font-family: "Work Sans", sans-serif;
-    font-size: 20px;
-    color: #004000;
-    padding-bottom: 20px;
 }
 
 /* ------------------------------------------
@@ -116,13 +90,13 @@
 /* phone shadow */
 .phone-shadow {
     position: absolute;
-    bottom: -450px;
+    bottom: -310px;
     left: 270px;
     transform: none;
     width: 320px;
     height: 60px;
-    background: rgba(0, 0, 0, 0.25);
-    filter: blur(20px);
+    background: rgba(0, 0, 0, 0.285);
+    filter: blur(25px);
     border-radius: 50%;
     z-index: 1;
 }
@@ -141,7 +115,7 @@
 }
 .phone-screen-box .row .right-column h2{
     font-family: "Inter", sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
     margin-bottom: 10px;
     color: #004000;
@@ -220,7 +194,7 @@
 }
 .food-analysis .food-analysis-box h1 {
     font-family: "Inter", sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
     color: #004000;
 }
@@ -286,7 +260,7 @@
 }
 .app-features-try .features-row h2{
     font-family: "Inter", sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     color: #004000;
     text-align: center;
@@ -404,46 +378,40 @@
     margin-bottom: 0;
     margin-top: 120px;
     height: 350px;
-    
 }
-
 .join-society h1 {
     font-family: "Inter", sans-serif;
     color: #FFFFFF;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 20px;
     justify-content: center;
 }
-
 .join-society p {
     font-family: "Work Sans", sans-serif;
     color: #ffffff;
     font-size: 20px;
+    font-weight: 100 !important;
     max-width: 800px;
     margin: 0 auto 40px auto;
 }
-
 .join-cta-btn {
     display: inline-block;
     background: #ffffff;
     color: #004000;
     padding: 18px 50px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     border-radius: 50px;
     text-decoration: none;
     transition: 0.3s;
     margin-top: 20px;
 }
-
 .join-cta-btn:hover {
     background: #ffffff;
     color: #004000;
 }
-
-
 
 /* ----------------------------------------
 ----------------- TEXT RELATED 
@@ -453,7 +421,6 @@
     color: #FFB300;
     font-weight: 500;
 }
-
 .text-bold {
     font-weight: 500;
 }

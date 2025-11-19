@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Food Investor's Society</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+    <!-- 
+    /////////////////////// TOP NAV ///////////////////////
+    -->
+    <nav class="top-nav">
+        <div class="container nav-content">
+        <div class="links">
+            <a href="index.html" class="nav-icon house-icon"></a>
+            <a href="the-app.html">App</a>
+            <a href="foodX100.html">FoodX100</a>
+            <a href="my-foodX-community.html">FoodX Community</a>
+            <a href="cook.html">Cook</a>
+            <a href="join-us.html" class="current">Join</a>
+            <a href="about-us.html">About</a>
+        </div>
+        </div>
+    </nav>
+
+    <!-- 
+    ///////////////////////// HERO /////////////////////////
+    -->
+    <header class="hero-section hero-section-app">
+        <div class="container hero-content">
+            <div class="hero-left">
+                <!-- <h1 class="small-title">ABOUT</h1> -->
+                <h1 class="big-title">Individual Annual</h1>
+            </div>
+            <div class="hero-right">
+                <p>
+                    Membership type
+                </p>
+                <img src="assets/icons/memberships/white/m1.svg" class="icon graph-hero">
+
+            </div>
+        </div>
+    </header>
+
+    <!-- 
+    ///////////////////////// TAGLINE ///////////////////////////
+    -->
+    <section class="tagline">
+        <div class="tagline-m1">
+            <p>
+                Every pound strengthens our shared voice for good food.
+            </p>
+        </div>
+    </section>
+
+    <!-- 
+    ////////////////////////// VALUE ////////////////////////////
+    -->
+    <section class="value">
+        <div class="value-m1">
+            <p>
+                Join a growing movement for a healthier<br>food system at a level thats affordable for you.
+            </p>
+        </div>
+    </section>
+    
+    <!-- 
+    ///////////////////// BENEFITS + DETAILS ////////////////////
+    -->
+    <section class="wrapper">
+        <!-- benefits -->
+        <div class="benefits-box">
+            <div class="benefits-m1">
+                <h2>Benefits: </h2>
+                <div class="text-center-box">
+                    <p>
+                        ✓ News & updates<br>
+                        ✓ Event invitations<br>
+                        ✓ One member, one vote
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- details -->
+        <div class="details-box">
+            <div class="details-m1">
+                <h2>Key Membership Details:</h2>
+                <div class="text-center-box">
+                    <p>
+                        <b>•&nbsp;&nbsp;Duration:</b> 1 year (annual renewal)<br>
+                        <b>•&nbsp;&nbsp;Fees:</b> Pay As You Can (minimum £1, suggested £12)<br>
+                        <b>•&nbsp;&nbsp;Share Capital:</b> Includes a £1 member share<br>
+                        <b>•&nbsp;&nbsp;Share Status:</b> Non-withdrawable
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @@@@@@@@@@@@@@@@@@@@     FORM     @@@@@@@@@@@@@@@@@@@@@@
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <section class="form-wrapper">
+        <h2>Sign-Up</h2>
+        <form action="/submit-membership" method="POST">
+
+            <!-- /////////////////////////////////////////////
+            ////////////// 1. PERSONAL DETAILS 
+            ////////////////////////////////////////////////-->
+            <h2>1. Personal Details</h2>
+
+            <!-- name + surname -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name"><b>First Name</b><i>(required)</i></label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname"><b>Surname</b><i>(required)</i></label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+            </div>
+
+            <!-- address -->
+            <label for="address"><b>Postal Address</b> <i>(required - for the official Register of Members)</i></label>
+            <input type="text" id="address" name="address" required>
+
+            <!-- postcode -->
+            <label for="postcode"><b>Postcode</b><i>(required - for the official Register of Members)</i></label>
+            <input type="text" id="postcode" name="postcode" required>
+
+            <!-- email + phone -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email"><b>Email Address</b><i>(required)</i></label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><b>Phone Number</b><i>(optional)</i></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+
+            <!-- preferred contact method -->
+            <label for="contact-method"><b>Preferred Contact Method</b></label>
+            <label>
+                <input type="radio" id="email" name="email" required>
+                Email
+            </label>
+            <label>
+                <input type="radio" name="contact-method" value="post">
+                Post
+            </label>
+            <label>
+                <input type="radio" name="contact-method" value="phone">
+                Phone
+            </label>
+
+            <!-- /////////////////////////////////////////////
+            /////////////// 2. CONFLICT OF INTEREST
+            ////////////////////////////////////////////////-->
+            <h2>2. Conflict of Interest and Affiliations <i>(required)</i></h2>
+            <p><i>
+                The Food Investors Society is committed to transparency and independence. To
+                protect the integrity of our mission, we ask all members to disclose any personal,
+                professional, or organisational interests that could reasonably be perceived as
+                influencing their participation in the Society.
+            </i></p>
+
+            <!-- declaration 1 -->
+            <p><b>Do you have any current or past affiliations that may represent a potential conflict of interest?</b></p>
+            <label>
+                <input type="radio" name="conflict" value="no" required>
+                No, I have no relevant affiliations
+            </label>
+            <label>
+                <input type="radio" name="conflict" value="yes">
+                Yes (please provide details below)
+            </label>
+            <label for="conflict-details">If yes, please describe the organisation(s), your role, and nature of involvement:</label>
+            <textarea id="conflict-details" name="conflict-details" rows="4"></textarea>
+            
+            <!-- declaration 2 -->
+            <label for="phone">Declaration:</label>
+            <p>
+                “I confirm that the information provided is accurate and that I will notify the Society of
+                any future potential conflicts of interest should they arise.”
+            </p>
+            <label>
+                <input type="checkbox" name="conflict-agree" required>
+                <i>I agree to the above declaration.</i>
+            </label>
+
+            <!-- /////////////////////////////////////////////
+            ////////////// 3. DECLARATION OF SUPPORT 
+            ////////////////////////////////////////////////-->
+            <h2>3. Declaration of Support <i>(required)</i></h2>
+            <p>
+                “I support the aims of The Food Investors Society Ltd to create a healthier, fairer, and
+                more sustainable food system. I agree to uphold the Societys values and abide by
+                its <u><b>Rules</b></u> as a member.”
+            </p>
+            <label>
+                <input type="checkbox" name="declaration-of-support" required>
+                <i>I agree to the above declaration.</i>
+            </label>
+
+            <!-- /////////////////////////////////////////////
+            ///////////// 4. DATA PROTECTION & CONSENT 
+            ////////////////////////////////////////////////-->
+            <h2>4. Data Protection and Consent <i>(required)</i></h2>
+            <p>
+                “The Food Investors Society Ltd will use your information solely for administering
+                your membership and communicating Society updates. Your details will be stored
+                securely in line with UK GDPR.”
+            </p>
+            <label>
+                <input type="checkbox" required>
+                <i>I consent to The Food Investors Society contacting me with relevant news, updates, and invitations</i>
+            </label>
+            <label>
+                <input type="checkbox" required> 
+                <i>I understand I can withdraw my consent at any time</i>
+            </label>
+
+            <!-- ///////////////////////////////////////////////
+            //////// 5. VOTING & ELIGIBILITY CONFIRMATION 
+            /////////////////////////////////////////////////-->
+            <h2>5. Voting & Eligibility Confirmation <i>(required)</i></h2>
+            <p>
+                “Membership includes one £1 share in The Food Investors Society Ltd, registered
+                with the Financial Conduct Authority as a Community Benefit Society. Each member
+                holds one vote, regardless of the number of shares held.”
+            </p>
+            <label>
+                <input type="checkbox" required> 
+                <i>I understand that my membership includes a £1 share, which is non-withdrawable and non-transferable.</i>
+            </label>
+            <label>
+                <input type="checkbox" required>
+                <i>I confirm I am aged 16 or over and eligible to hold membership in the Society.</i>
+            </label>
+
+            <!-- //////////////////////////////////////////////
+            ////////////////// 6. CONTRIBUTION 
+            //////////////////////////////////////////////////-->
+            <h2>6. Contribution <i>(required)</i></h2>
+            <p>
+                Our Pay What You Can model helps make membership accessible while supporting our mission.
+            </p>
+            <label>
+                <input type="radio" name="amount" value="1" required> 
+                £1 (minimum)
+            </label>
+            <label>
+                <input type="radio" name="amount" value="12"> 
+                £12 (suggested)
+            </label>
+            <label class="contribution-other">
+                <input type="radio" name="amount" value="other">
+                Other £
+                <input type="number" name="amount" min="1" class="other-input">
+            </label>
+
+            <!-- payment method -->
+            <p>
+                Payment method:
+            </p>
+            <label>
+                <input type="radio" name="amount" value="1" required> 
+                Online Payment (secure link)
+            </label>
+            <label>
+                <input type="radio" name="amount" value="12"> 
+                Direct Debit (??)
+            </label>
+            <p>
+                Annual Individual Memberships are renewed yearly. Renewal reminders will be sent
+                30 days before renewal is due.
+            </p>
+
+            <!-- /////////////////////////////////////////////////
+            ///////// 7. INFO FOR IMPACT AND INSIGHT ONLY 
+            ////////////////////////////////////////////////////--> 
+            <h2>7. Information for Impact and Insight <i>(optional)</i></h2>
+            <p><i>
+                This section is optional, but your responses help us understand who we're reaching
+                and how we can make our work more inclusive and effective.
+            </i></p>
+
+            <label for="age-range"><b>Age Range:</b></label>
+            <select id="age-range" name="age-range" required>
+                <option value="" disabled selected>Select age range</option>
+                <option value="under-18">Under 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-44">25-44</option>
+                <option value="45-64">45-64</option>
+                <option value="65+">65+</option>
+                <option value="prefer-not">Prefer not to say</option>
+            </select>
+
+            <label for="ethnicity"><b>Ethnic Background: <i>(optional)</i></b></label>
+            <select id="ethnicity" name="ethnicity">
+                <option value="" selected>Prefer not to say</option>
+
+                <option value="white">White</option>
+                <option value="mixed">Mixed or Multiple Ethnic Groups</option>
+                <option value="asian">Asian or Asian British</option>
+                <option value="black">Black, Black British, Caribbean or African</option>
+                <option value="arab">Arab</option>
+                <option value="other">Other (please specify)</option>
+            </select>
+
+            <!-- Only filled if “Other” is selected -->
+            <label for="ethnicity-other" class="ethnicity-other-label">If Other, please specify</label>
+            <input type="text" id="ethnicity-other" name="ethnicity-other">
+
+            <!-- disability -->
+            <label for="disability"><b>Do you consider yourself to have a disability or long-term health condition?</b></label>
+            <label>
+                <input type="radio" id="email" name="email" required>
+                Yes
+            </label>
+            <label>
+                <input type="radio" id="post" name="post" required>
+                No
+            </label>
+            <label>
+                <input type="radio" id="email" name="email" required>
+                Prefer not to say
+            </label>
+
+            <!-- how did you hear about us -->
+            <label for="hear-about-us"><b>How did you hear about The Food Investors Society / foodXchange?</b></label>
+            <input type="text" id="hear-about-us" name="hear-about-us" required>
+
+            <!-- why join us -->
+            <label for="hear-about-us"><b>Why do you want to join The Food Investors Society?</b></label>
+            <textarea id="conflict-details" name="conflict-details" rows="4"></textarea>
+
+            <!-- ///////////////////////////////////////////////
+            ///////////// 8. SIGNATURE (Required) 
+            ///////////////////////////////////////////////// -->
+            <h2><b>8. Signature</b><i>(required)</i></h2>
+            <label for="hear-about-us"><b>Digital Signature (type full name)</b></label>
+            <textarea id="conflict-details" name="conflict-details" rows="4"></textarea>
+        
+            <!-- date -->
+            <label for="date"><b>Date:</b></label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- ///////////////////////////////////////////////
+            //// 9. OFFICE USE ONLY (hidden admin section) 
+            ///////////////////////////////////////////////// -->
+            <div class="admin-only">
+                <h3>Office Use Only</h3>
+
+                <label>Membership ID (auto-generated):</label>
+                <input type="text" name="membership-id" readonly>
+
+                <label>Date Approved (auto-generated):</label>
+                <input type="date" name="date-approved" readonly>
+
+                <label>Payment Recorded (£):</label>
+                <input type="number" name="payment-recorded" min="0" step="0.01">
+
+                <label>Membership Type:</label>
+                <input type="text" name="membership-type" value="Annual Individual" readonly>
+
+                <label>Entered in Register By:</label>
+                <input type="text" name="entered-by">
+            </div>
+
+            <!-- ///////////////////////////////////////////////
+            /////////// SUBMIT + REDIRECT TO PAYMENT 
+            ///////////////////////////////////////////////// -->
+            <button type="submit" class="submit-button">Submit & Proceed to Payment</button>
+        </form>
+    </section>
+    
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    <!-- 
+    ////////////////// CTA BLACK SECTION //////////////////
+    -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Like what we are doing? Join the movement!</h2>
+            <a href="join-us.html">Join the Society</a>
+            <a href="#">Get updates & healthy hacks in your inbox</a>
+            <a href="my-foodX-community-partners-about.html">Get your business listed in the app</a>
+            <a href="donation.html">Donate</a>
+        </div>
+    </section>
+
+    <!-- 
+    /////////////////////// SOCIAL ///////////////////////
+    -->
+    <section class="social-section">
+        <div class="social-icons">
+            <h2>Follow our journey</h2>
+
+            <div class="social-icons-row">
+                <a href="#" class="icon facebook"></a>
+                <a href="#" class="icon instagram"></a>
+                <a href="#" class="icon x"></a>
+                <a href="#" class="icon youtube"></a>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    /////////////////////// FOOTER ///////////////////////
+    -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>© 2025 Food Investors Society — All rights reserved</p>
+            </div>
+            <div class="footer-right">
+                <a href="privacy_policy.html" class="footer-link">Privacy Policy</a>
+                <span class="dot"></span>
+                <a href="cookies.html" class="footer-link">Use of Cookies</a>
+                <span class="dot"></span>
+                <a href="business.html" class="footer-link">Business</a>
+                <span class="dot"></span>
+                <a href="contact-us.html" class="footer-link">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

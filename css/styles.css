@@ -40,6 +40,9 @@
 /* JOIN US */
 @import url("pages/join.css");
 
+/* MEMBERSHIPS */
+@import url("pages/sign-m1.css");
+
 /* MISC */
 @import url("pages/contact.css");
 @import url("pages/donation.css");
