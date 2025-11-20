@@ -27,7 +27,7 @@
 .membership-options {
     margin-bottom: 25px;
     margin-left: 50px;
-    margin-right: 50px;
+    /* margin-right: 50px; */ /* had to remove as wrapper has right padding 80px */
     margin-top: 25px;
 }
 .membership-options h2 {
@@ -149,13 +149,15 @@
 
 
 /* ------------------------------------------
-------------- HEADER: SUPPORT 
+------------- BECOME A SUPPORTER 
 ---------------------------------------------*/
 .supporter {
     margin-top: 100px;
-    height: 500px;
+    height: 450px;
     line-height: 1.2;
     padding-left: 50px;
+    padding-top: 20px;
+    /* padding-bottom: 30px; */
     text-align: center;
     background-color: #004000;
     line-height: 1.2;
@@ -218,4 +220,5 @@
 .support-btn:hover {
     background: #ffffff;
     color: #004000;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }

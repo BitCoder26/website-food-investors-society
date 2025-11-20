@@ -43,7 +43,7 @@
 }
 .value .value-m1 p {
     font-size: 20px;
-    font-weight: 00;
+    font-weight: 100;
     font-family: "Work Sans", sans-serif;
     color: #004000;
 }
@@ -103,35 +103,74 @@
 }
 
 /* ------------------------------------------
--------------- FORM 
+----------------- FORM 
 ---------------------------------------------*/
 .form-wrapper {
     text-align: left;
     margin-left: 50px;
-    margin-top: -20px;
-    font-size: 20px;
+    margin-top: -50px;
     font-weight: 100;
     font-family: "Work Sans", sans-serif;
     color: #004000;
-
-}
-form {
     box-sizing: border-box;
-    width: 96%;
-    margin-left: 0px;
+    margin-left: 50px;
+    /* margin-right: 55px; */
     margin-top: 0px;
-    margin-bottom: 100px;
-    padding: 40px 50px;
+    margin-bottom: 80px;
+    padding: 60px 90px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    font-family: inherit;
 }
-form h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #004000; /* your brand green */
-    font-size: 1.2rem;
+.form-wrapper h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #004000;
+}
+.form-wrapper .membership-initial-text {
+    padding-bottom: 20px;
+}
+.form-wrapper h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #004000;
+}
+.form-wrapper h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #004000;
+}
+.form-wrapper p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #004000;
+}
+.form-wrapper span {
+    font-weight: 100;
+}
+.form-wrapper label {
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #004000;
+}
+.form-wrapper b {
+    font-weight: 900;
+}
+.form-wrapper select {
+    color: #004000;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+.form-wrapper select option {
+    background-color: #ffffff; 
+    color: #004000;
 }
 .form-row {
     display: flex;
@@ -139,19 +178,20 @@ form h3 {
     margin-top: 15px;
 }
 .form-group {
-    flex: 1; /* makes both inputs equal width */
+    flex: 1;
 }
 .form-group label {
     display: block;
     margin-bottom: 8px;
     font-weight: 100;
-    color: #333;
+    color: #004000;
 }
 form label {
     display: block;
     margin-top: 15px;
     font-weight: 100;
-    color: #333;
+    font-size: 20px;
+    color: #004000;
 }
 
 form input[type="text"],
@@ -163,35 +203,93 @@ form textarea {
     padding: 12px 14px;
     border: 2px solid #d7d7d7;
     border-radius: 8px;
-    font-size: 1rem;
     margin-top: 8px;
     box-sizing: border-box;
 }
-
 form input[type="radio"],
 form input[type="checkbox"] {
     margin-right: 6px;
     transform: translateY(1px);
 }
-
+/* Button */
 button[type="submit"] {
-    width: 100%;
-    padding: 14px;
+    font-size: 20px;
+    width: 42%;
+    padding: 20px;
     background: #004000;
     color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    margin-top: 30px;
+    border-radius: 50px;
+    margin: 60px auto 20px auto; 
     cursor: pointer;
+    text-align: center;
+    display: block;
 }
-
 button[type="submit"]:hover {
-    background: #006600;
+    background: #004000;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
-
-
-/* ADMIN */
+button[type="submit"] {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+/* admin */
 .admin-only {
     display: none;
+}
+/* STYLING - FORM*/
+/* dropdowns */
+.form-wrapper select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #d7d7d7;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 18px;
+    color: #004000;
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%23004000'><polygon points='0,0 20,0 10,12'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 14px;
+}
+/* Remove blue outline when clicking */
+.form-wrapper select:focus {
+    outline: none;
+    border-color: #004000;
+    box-shadow: 0 0 6px rgba(0, 100, 0, 0.2);
+}
+/* date picker */
+.form-wrapper input[type="date"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #d7d7d7;
+    border-radius: 8px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #004000;
+    background-color: white;
+}
+.selectBtn {
+    color: #ffb300
+}
+.form-wrapper ul {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.6;
+}
+/* Form input highlight on focus */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form textarea:focus,
+.form-wrapper select:focus {
+    border-color: #004000 !important;
+    box-shadow: 0 0 6px rgba(0, 64, 0, 0.25);
+    outline: none;
 }

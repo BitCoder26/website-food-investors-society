@@ -2,7 +2,11 @@
     position: relative;
     background: black;
     color: white;
-    padding: 20px 50px;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+
     font-family: "Inter", sans-serif;
     overflow: hidden;
     display: flow-root;

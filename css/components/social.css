@@ -1,6 +1,9 @@
 .social-section {
     background-color: black;
-    padding: 10px 50px;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px;
 }
 
 .social-icons {

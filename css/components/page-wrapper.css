@@ -1,0 +1,8 @@
+/* ------------------------------------------
+SCREENS WIDTH PAGE ADJUSTMENT (EXC HERO + NAV) 
+---------------------------------------------*/
+.page-wrapper {
+    margin: 0 70;
+    padding-left: 30px;
+    padding-right: 80px;
+}

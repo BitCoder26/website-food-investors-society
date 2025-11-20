@@ -1,6 +1,9 @@
 .main-footer {
     font-size: 0.8rem;
-    padding: 20px 50px 50px;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px;
     background: black;
     color: white;
 }
