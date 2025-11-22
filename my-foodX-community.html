@@ -29,11 +29,22 @@
     <!-- 
     ///////////////////////// HERO /////////////////////////
     -->
-    <header class="hero-section hero-section-foodx100">
+    <header class="hero-section hero-section-foodxcommunity">
         <div class="container hero-content">
             <div class="hero-left">
                 <!-- <h1 class="small-title">APP FEATURE:</h1> -->
                 <h1 class="big-title">My FoodX Community</h1>
+            </div>
+            <!-- Sticky note -->
+            <div class="sticky-stack">
+                <div class="sticky-note note-top">
+                    <p>
+                        <b>To do:</b><br>This 'gateway' page exists as per the Miro client diagram.<br>
+                        Is it meant to be here or not?
+                        <br><br>
+                        Complete My Groups section
+                    </p>
+                </div>
             </div>
             <div class="hero-right">
                 <p>Shared choices create the<br> strongest long-term gains</p>
@@ -42,61 +53,125 @@
         </div>
     </header>
 
-    <!-- 
-    ///////////// FOODX MY COMMUNITY FEATURES /////////////
-    -->
-    <section class="main-text-foodx-my-community">
-        <div class="container">
-            <h2><span class="app-name">Explore</span> your FoodX Community</h2>
-            <p>Join online groups, find nearby FoodX partners, and explore activities happening around you.</p>
-            <div class="container-row">
-                <!-- FoodX My Neighbourhood -->
-                <a href="my-foodX-community-my-neighbourhood.html" class="card-link">
-                    <div class="my-community-card">
-                        <img src="assets/icons/foodx-community/my_neighbourhood_neon.svg" class="icon graph-hero">
-                        <h1>My Neighbourhood</h1>
-                        <p>Discover healthy food near you</p>
-                    </div>
-                </a>
-                
-                <!-- FoodX My Groups -->
-                <a href="my-foodX-community-my-groups.html" class="card-link">
-                    <div class="my-community-card">
-                        <img src="assets/icons/foodx-community/my_community.svg" class="icon graph-hero">
-                        <h1>My Groups</h1>
-                        <p>Join and explore groups</p>
-                    </div>
-                </a>
+    <div class="page-wrapper">
+        <!-- 
+        //////////// TAGLINE + VALUE ///////////
+        -->
+        <section class="connect-with-others">
+            <div class="container">
+                <h2>Connect with others to make healthy eating simpler and more social.</h2>
+                <p>
+                    My Food Community connects you with local artisans, markets, and independent food businesses, along with supportive<br>
+                    in-app groups. Together they make healthy eating easier, more social, and rooted in your local community.<br>
+                </p>
             </div>
-        </div>
-    </section>
+        
+            <div class="neighbourhood-text">
+                <h2>
+                    Your neighbourhood<br>on your fingertips.
+                    <!-- <br>Find local shops, markets and makers. -->
+                </h>
+            </div>
+        </section> 
 
-    <!-- 
-    /////////////////// GET THE APP CTA /////////////////// 
-    -->
-    <div class="app-card">
-        <div class="app-icon-wrapper">
-            <img src="assets/icons/logo/logo_white.svg" class="app-icon default-icon">
-            <img src="assets/icons/logo/logo_white_green_apple.svg" class="app-icon hover-icon">
-            <!-- Glow apple overlay -->
-            <svg class="apple-glow" viewBox="0 0 375 375">
-                <!-- leaf -->
-                <path d="M 219.351562 114.410156 C 221.359375 114.945312 223.445312 115.214844 225.570312 115.214844 C 228.042969 115.214844 230.558594 114.851562 233.042969 114.125 C 237.746094 112.75 242.136719 110.121094 245.734375 106.523438 C 249.335938 102.921875 251.964844 98.535156 253.335938 93.832031 C 254.6875 89.214844 254.785156 84.480469 253.621094 80.140625 C 253.4375 79.449219 252.894531 78.90625 252.203125 78.722656 C 247.863281 77.558594 243.128906 77.65625 238.511719 79.003906 C 233.808594 80.378906 229.417969 83.007812 225.820312 86.605469 C 222.222656 90.207031 219.59375 94.597656 218.21875 99.300781 C 216.871094 103.917969 216.773438 108.652344 217.933594 112.992188 C 218.121094 113.683594 218.660156 114.222656 219.351562 114.410156"
-                    fill="#73FF00"/>
-                <!-- apple body -->
-                <path d="M 267.359375 170.328125 C 262.445312 168.675781 258.710938 164.703125 257.371094 159.707031 C 256.667969 157.089844 256.664062 154.328125 257.363281 151.726562 C 257.550781 151.03125 257.351562 150.292969 256.84375 149.789062 C 254.9375 147.882812 253.554688 145.496094 252.851562 142.875 C 251.722656 138.675781 252.429688 134.167969 254.789062 130.511719 C 255.09375 130.042969 255.1875 129.46875 255.046875 128.925781 C 254.90625 128.382812 254.546875 127.925781 254.054688 127.660156 C 250.832031 125.929688 247.253906 125.191406 243.417969 125.464844 C 239.660156 125.730469 235.738281 126.96875 231.757812 129.140625 C 229.46875 130.390625 227.011719 131.160156 224.519531 131.460938 C 224.519531 131.429688 224.523438 131.398438 224.523438 131.367188 C 224.523438 123.160156 220.957031 115.480469 214.484375 109.746094 C 208.09375 104.082031 199.585938 100.960938 190.535156 100.960938 C 189.429688 100.960938 188.53125 101.855469 188.53125 102.964844 C 188.53125 104.070312 189.429688 104.96875 190.535156 104.96875 C 207.066406 104.96875 220.511719 116.8125 220.511719 131.367188 C 220.511719 131.421875 220.519531 131.476562 220.523438 131.527344 C 217.816406 131.300781 215.148438 130.519531 212.683594 129.175781 C 208.515625 126.910156 204.429688 125.652344 200.546875 125.4375 C 196.574219 125.222656 192.898438 126.097656 189.625 128.042969 C 180.460938 133.488281 175.414062 146.800781 175.414062 165.515625 C 175.414062 182.460938 182.460938 198.4375 192.953125 205.273438 C 196.667969 207.695312 200.675781 208.910156 204.824219 208.910156 C 208.042969 208.910156 211.347656 208.179688 214.671875 206.710938 C 219.53125 204.566406 225.21875 204.496094 230.277344 206.519531 C 237.632812 209.457031 244.84375 209.019531 251.136719 205.253906 C 255.8125 202.457031 259.921875 197.820312 263.019531 191.855469 C 265.953125 186.199219 267.921875 179.488281 268.710938 172.453125 C 268.816406 171.515625 268.253906 170.628906 267.359375 170.328125"
-                    fill="#73FF00"/>
-            </svg>
-        </div>
 
-        <div class="app-info">
-            <h3>Get the App</h3>
-            <p>Coming soon on App Store & Google Play</p>
-        </div>
+        <!-- 
+        //////////// MAP + PINS GRAPHIC ///////////
+        -->
+        <section class="map-feature">
+            <div class="map-feature-left">
+                <div class="neighbourhood-wrapper">
+                    <img src="assets/icons/foodx-community/map_pins.svg" class="map-image">
+                    <!-- LEFT -->
+                    <div class="map-bubble bubble-left-0">Shop details</div>
+                    <div class="map-bubble bubble-left-1">Shop name</div>
+                    <div class="map-bubble bubble-left-2">Category</div>
+                    <div class="map-bubble bubble-left-3">Price range</div>
+                    <div class="map-bubble bubble-left-4">Contact details</div>
+                    <div class="map-bubble bubble-left-5">Opening hours</div>
+                    <div class="map-bubble bubble-left-6">Address</div>
+                    <div class="map-bubble bubble-left-7">Score & reviews</div>
+                    <div class="map-bubble bubble-left-8">Website</div>
 
-        <div class="app-cta">
-            <button class="download-btn">Download</button>
-        </div>
+                    <!-- RIGHT -->
+                    <div class="map-bubble bubble-right-0">Local shops</div>
+                    <div class="map-bubble bubble-right-1">Cookery workshop</div>
+                    <div class="map-bubble bubble-right-2">Delicatessen</div>
+                    <div class="map-bubble bubble-right-3">Bakery</div>
+                    <div class="map-bubble bubble-right-4">Butcher</div>
+                    <div class="map-bubble bubble-right-5">Farmers market</div>
+                    <div class="map-bubble bubble-right-6">Artisan</div>
+                    <div class="map-bubble bubble-right-7">Specialty grocer</div>
+                </div>
+            </div>
+
+            <div class="map-feature-right">
+
+                <div class="row-inner">
+                    <img src="assets/icons/foodx-community/neighbourhood_green.svg" class="icon graph-hero">
+                    <h2>My Neighbourhood</h2>
+                </div>                        
+                <h2>Your guide to local eating.</h2>
+                <p>
+                    My Neighbourhood brings together local
+                    <br>businesses, markets, and artisans so you can eat 
+                    <br>healthier while supporting the people around you.
+                    <br><br>
+                    Find independent shops, authentic flavours, local
+                    <br>events, and trusted community recommendations.
+                    <br><br>
+                    Try it now.
+                </p>
+
+                <!-- Try the map --> 
+                <div class="try-map">
+                    <a href="my-foodX-community-my-neighbourhood.html" class="try-map-btn">Try it</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+        //////////// GROUPS GRAPHIC ///////////
+        -->
+        <section class="groups-graphic-box">
+            <div class="groups-column">
+                
+                <div class="group-text">
+                    <h2>
+                        Your support network, always online.
+                        <!-- <br>Find online groups for cooking, health and learning. -->
+                    </h>
+                </div>
+
+                <div class="groups-row">
+                    <div class="groups-box">
+                        <div class="groups-wrapper">
+                            <!-- my groups graphic goes here -->
+                            <p>My Groups Graphic</p>
+                        </div>
+                    </div>
+
+                    <div class="groups-feature-right">   
+                        <div class="row-inner">
+                            <img src="assets/icons/foodx-community/groups_green.svg" class="icon graph-hero">
+                            <h2>My Groups</h2>
+                        </div>             
+                        <h2>Healthy living, together.</h2>
+                        <p>
+                            My Groups gathers food lovers, creators, and
+                            <br>communities so you can learn, share, and enjoy
+                            <br>healthier eating as a team.
+                            Try it now.
+                        </p>
+
+                        <!-- Try my groups --> 
+                        <div class="try-groups">
+                            <a href="my-foodX-community-my-groups.html" class="try-groups-btn">Try it</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- 

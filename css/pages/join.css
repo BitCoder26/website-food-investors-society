@@ -4,7 +4,7 @@
 .join-us {
     line-height: 1.2;
     margin-bottom: 40px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     margin-bottom: 100px;
 }
 .join-us h2 {
@@ -26,8 +26,6 @@
 ---------------------------------------------*/
 .membership-options {
     margin-bottom: 25px;
-    margin-left: 50px;
-    /* margin-right: 50px; */ /* had to remove as wrapper has right padding 80px */
     margin-top: 25px;
 }
 .membership-options h2 {
@@ -155,13 +153,10 @@
     margin-top: 100px;
     height: 450px;
     line-height: 1.2;
-    padding-left: 50px;
     padding-top: 20px;
-    /* padding-bottom: 30px; */
     text-align: center;
     background-color: #004000;
     line-height: 1.2;
-    padding-left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;

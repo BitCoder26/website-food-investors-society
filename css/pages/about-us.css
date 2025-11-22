@@ -1,154 +1,264 @@
-/* /////// HERO ABOUT /////// */
-.hero-section-about {
-    height: 150px;
-}
-
-.hero-section-about .hero-right {
-    margin-bottom: 10px;
-    text-align: right;
-    max-width: 600px;
+/* /////// MISSION + VISION + VALUES /////// */
+.vision-mission-values .row {
     display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hero-section-about .hero-right img {
-    width: 40px;
-    height: 40px;
-    color: white;
-}
-
-.hero-section-about .hero-right p {
-    color: white;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 18px;
-}
-
-/* /////// MEET THE FOUNDERS /////// */
-
-.founders {
-    margin-left: 50px;
-    margin-right: 50px;
-    color: #004000
-}
-
-.founders .container h2{
-    font-family: "Inter", sans-serif;
-    font-size: 32px;
-}
-
-.founders .coloured-orange {
-    color: #FFB300;
-}
-
-.founders img {
-    width: 120px;
-    height: 120px;
-    border-radius: 100px;
-} 
-
-.founders-row {
-    display: flex;
-    gap: 20px;
     justify-content: center;
+    width: 100%;
+    gap: 100px;
+}
+.vision-mission-values .vision,
+.vision-mission-values .mission,
+.vision-mission-values .values {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+    width: 33.33%;
+    position: relative;
+}
+.vision-mission-values .title-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px; 
+    width: 100%;
+}
+.vision-mission-values .title-row h1 {
+    margin-top: 35px;
+}
+.vision-mission-values .title-row img {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+.vision-mission-values .diamond {
+    margin-top: 10px;
+    width: 40px !important;
+    height: 40px !important;
+}
+.vision-mission-values h1 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #004000;
+    text-align: left;
+    align-items: center;
+}
+.vision-mission-values p {
+    margin-top: 30px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #004000;
+    text-align: left;
+    align-items: center;
+}
+.vision-mission-values b {
+    font-weight: 500;
+}
+/* icon shadow */
+.icon-shadow {
+    position: absolute;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(8px);
+    border-radius: 50%;
+    z-index: 0;
+}
+.eye-shadow {
+    width: 55px !important;
+    left: 25px !important;
+    bottom: 138px; 
+}
+.target-shadow {
+    width: 45px !important;
+    left: 17px;
+    bottom: 138px; 
+}
+.diamond-shadow {
+    width: 45px !important;
+    left: 21px;
+    bottom: 138px; 
+}
+
+
+/* ////////////////// STORY ////////////////// */
+.story .row  {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.story .image-box {
+    display: flex;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #004000;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 20px;
+    color: #004000;
+}
+/* image shadow */
+.image-shadow {
+    position: absolute;
+    transform: translateX(-50%);
+    width: 630px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.20);
+    filter: blur(30px);
+    border-radius: 50%;
+    z-index: 0;
+    left: 380px;
+    bottom: -265px;
+}
+.story .column-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    color: #004000;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+.story .column-box h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+.story .column-box p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
     margin-top: 20px;
 }
 
-.founders .founders-row .fiona img{
-    align-items: center;
+/* //////////////// FOUNDERS //////////////// */
+.founders {
+    margin-top: 180px;
 }
-
-.about-us-text-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.founder-card {
-    background: white;
-    border-radius: 25px;
-    padding: 40px;
-    width: 100%;
+.founders h1 {
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Work Sans", sans-serif;
-    font-size: 20px;
-}
-
-.founder-card p {
-    margin: 5px 0;   
-    line-height: 1.4;
-} 
-
-/* /////// HISTORY & MISSION /////// */
-.history,
-.mission-vision {
-    flex: 1;
-    max-width: 50%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    flex-wrap: wrap;
-    font-family: "Work Sans", sans-serif;
-    font-size: 20px;
-    color: #004000;
-}
-
-.history h2,
-.mission-vision h2 {
     font-family: "Inter", sans-serif;
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: 900;
     color: #004000;
+    margin-bottom: 40px;
 }
-
-/* /////// VALUE CARDS /////// */
-.values-grid {
-    justify-content: space-between;
-    font-family: "Work Sans", sans-serif;
-    font-size: 20px;
+.founders-row {
     display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
-    gap: 20px;
-}
-
-.value-card {
-    justify-content: center;
-    background: #004000;
-    border-radius: 25px;
-    padding: 0px;
+    gap: 80px;
     width: 100%;
-    height: 300px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.founder-card {
+    width: 33.33%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.value-card img {
-    width: 40px;
-    height: 40px;
-    filter: drop-shadow(0 0 10px #73FF00)
-}
-
-.value-card p {
-    margin-bottom: 0px;
-    color: white;
-    line-height: 1.5;
+    text-align: center;
     font-family: "Work Sans", sans-serif;
     font-size: 20px;
+    font-weight: 100;
+    color: #004000;
+    position: relative;
+}
+.profile-crop {
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.95);
+}
+.profile-crop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.1);
+    transform-origin: center center;
+}
+.founders .profile-crop img {
+    border-radius: 50%;
 }
 
-.history span,
-.mission-vision span {
-    color: #FFB300; 
+/* //////////////// DONATION //////////////// */
+.about-us-donation-section {
+    margin-top: 100px;
+    height: 350px;
+    line-height: 1.2;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: #004000;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-us-donation-section h2 {
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+.about-us-donation-section p {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+    color: white;
+}
+.card-content .donation-text{
+    justify-items: center;
+}
+.card-content .donation-text p {
+    text-align: left;
+}
+.about-us-donation-section .donation-text{
+    justify-items: center;
+}
+.about-us-donation-section .donation-text p{
+    text-align: left;
+}
+/* Button */
+.donation-button-box {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.donation-button-box p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #004000;
+    text-decoration: none;
+}
+.donation-btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #004000;
+    padding: 18px 50px;
+    font-size: 20px;
     font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+.donation-btn:hover {
+    background: #ffffff;
+    color: #004000;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }

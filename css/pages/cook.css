@@ -1,87 +1,299 @@
-/* PAGE / SECTION */
-.main-text-cook {
-    margin-bottom: 50px;
+/* ------------------------------------------
+-------- HEADER: CONNECT WITH OTHERS
+---------------------------------------------*/
+.connect-with-others {
+    line-height: 1.2;
+}
+.connect-with-others h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+    margin-bottom: 0px;
+}
+.connect-with-others p {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+    color: #004000;
+}
+/* Page / Section */
+.main-text-home {
     margin-right: 50px;
     margin-left: 50px;
 }
-/* LAYOUT */
-.main-text-cook .container-row {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.welcome-text {
+    font-weight: 600;
 }
-/* HEADER TEXT */
-.main-text-cook h2 {
+.connect-with-others .neighbourhood-text h2 {
+    font-size: 30px;
+    font-weight: 800;
     font-family: "Inter", sans-serif;
-    font-size: 32px;
     color: #004000;
+    margin-top: 100px;
+    margin-bottom: -50px;
 }
-.main-text-cook > .container > p {
-    font-family: "Work Sans", sans-serif;
-    font-size: 20px;
+/* ------------------------------------------
+------------------ RECIPES
+---------------------------------------------*/
+.recipes-text h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
     color: #004000;
-    padding-bottom: 20px;
-}
-/* CARDS */
-.main-text-cook .cook-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 350px;
-    background-color: #004000;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-/* MAKE <a> BE THE LAYOUT HOLDER */
-.main-text-cook .card-link {
-    display: block;
-    width: 50%;
-    text-decoration: none;
-}
-/* ICON */
-.main-text-cook .cook-card img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    margin-top: 110px;
-}
-/* TEXT INSIDE CARD */
-.main-text-cook .cook-card h1 {
-    font-family: "Work Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-}
-.main-text-cook .cook-card p {
-    font-family: "Work Sans", sans-serif;
-    font-size: 15px;
-    font-weight: 100;
-    color: white;
-    text-align: center;
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
-
-/* HOVER EFFECTS */
-.main-text-cook .card-link:hover .cook-card img {
-    filter: drop-shadow(0 0 8px #73FF00);
-    transition: filter 0.25s ease;
+.recipes-graphic-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.recipes-column {
+    display: flex;
+    flex-direction: column;
+}
+.recipes-row {
+    display: flex;
+    flex-direction: row;
+}
+/* Right */
+.recipes-feature-right .row-inner h2 {
+    color: #ffb300;
+    margin-top: 20px;
+}
+.recipes-feature-right {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.recipes-feature-right h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+    margin-top: -40px;
+}
+.recipes-feature-right .row-inner {
+    display: flex;
+}
+.recipes-feature-right .row-inner img {
+    width: 60px;
+    height: 60px;
+    color: #004000;
+    margin-right: 30px;
 }
 
-.main-text-cook .card-link:hover {
-    transform: scale(1.01);
-    transition: transform 0.25s ease;
+.recipes-feature-right p {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+    color: #004000;
+}
+/* Left */
+/* position wrapper */
+.recipes-wrapper {
+    position: relative;
+    width: 680px;
+    height: 480px;
+    margin: 100px 0 100px 0;
+    text-align: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.recipes-wrapper p {
+    margin-top: 210px;
+}
+/* Left */
+.recipes-box {
+    margin-bottom: 50px;
+    width: 680px;
+    height: 400px;
+    background: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    color: #004000;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.recipes-box p {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+}
+/* Button: Try my groups */
+.try-recipes {
+    margin-top: 0px;
+    margin-bottom: 45px;
+    display: flex;
+}
+.try-recipes-btn p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #004000;
+    text-decoration: none;
+    justify-content: center;   
+}
+.try-recipes-btn {
+    background-color: #004000;
+    border-radius: 50px;
+    padding: 15px 35px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;  
+    text-align: center; 
+    margin-top: 20px;
+}
+.try-recipes-btn:hover {
+    background: #004000;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-.main-text-cook .card-link:hover .cook-card {
-    background-color: #005000;
-    transition: background-color 0.25s ease;
+/* ------------------------------------------
+-------------- COOKING HACKS
+---------------------------------------------*/
+.hacks-text h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
-
-.orange-text {
-    color: #FFB300;
+.hacks-feature-right .row-inner h2 {
+    color: #ffb300;
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #004000;
+}
+.hacks-graphic-box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.hacks-row {
+    display: flex;
+    flex-direction: row;
+}
+.hacks-column {
+    display: flex;
+    flex-direction: column;
+}
+/* Right */
+.hacks-feature-right {
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.hacks-feature-right h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    color: #004000;
+}
+.hacks-feature-right .row-inner {
+    display: flex;
+}
+.hacks-feature-right .row-inner img {
+    width: 60px;
+    height: 60px;
+    color: #004000;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.hacks-feature-right .row-inner h2 {
+    color: #ffb300;
+}
+.hacks-feature-right p {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+    color: #004000;
+}
+/* Left */
+/* position wrapper */
+.hacks-wrapper {
+    position: relative;
+    width: 680px;
+    height: 480px;
+    margin: 100px 0 100px 0;
+    text-align: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.hacks-wrapper p {
+    margin-top: 210px;
+}
+/* Left */
+.hacks-box {
+    margin-bottom: 100px;
+    width: 680px;
+    height: 400px;
+    background: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    color: #004000;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+}
+.hacks-box {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.hacks-box p {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;
+}
+/* Button: Try cooking hacks */
+.try-hacks {
+    margin-top: 0px;
+    margin-bottom: 45px;
+    display: flex;
+}
+.try-hacks-btn p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #004000;
+    text-decoration: none;
+    justify-content: center;   
+}
+.try-hacks-btn {
+    background-color: #004000;
+    border-radius: 50px;
+    padding: 15px 35px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;  
+    text-align: center; 
+    margin-top: 20px;
+}
+.try-hacks-btn:hover {
+    background: #004000;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }

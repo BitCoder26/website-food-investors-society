@@ -1,7 +1,5 @@
 .main-text-foodx100 {
     margin-bottom: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 .main-text-foodx100 .container .find-better-food-fast h2 {
@@ -20,11 +18,9 @@
 .main-text-foodx100 .container .foodx100-database {
     display: flex;
     border-radius: 25px;
-    background-color: white;
     align-items: center;        
     justify-content: center;
     height: 600px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 } 
 
 .main-text-foodx100 .foodx100-database {

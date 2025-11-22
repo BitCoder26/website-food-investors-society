@@ -8,13 +8,12 @@
 @import url("components/hero.css");
 @import url("components/subtext.css");
 @import url("components/graphic.css");
-@import url("components/image-row.css");
+@import url("components/testimonials.css");
 @import url("components/newsletter.css");
 @import url("components/social.css");
 @import url("components/footer.css");
-@import url("components/get-the-app-card.css");
 @import url("components/page-wrapper.css");
-
+@import url("components/sticky-note.css");
 
 /* 
 -------------------------------------------------
@@ -30,8 +29,14 @@
 @import url("components/problems-solutions.css");
 @import url("pages/app.css");
 
-/* FOODX100 */
-@import url("pages/foodx100.css");
+/* FOODX100 & MY NEIGHBOURHOOD & MY GROUPS & RECIPES & COOKING HACKS */
+/* 
+Important: all the above html pages share a common css
+- make sure to create a seperate css for each and rename the tags!
+- if you don't, they will still share the same css and changing one will affect others! 
+- i've left some of the tags (eg: .main-text-foodx100) for foodx - need to be changed 
+*/
+@import url("pages/app-features.css");
 
 /* FOODX MY COMMUNITY */
 @import url("pages/my-foodx-community.css");
@@ -44,6 +49,8 @@
 
 /* MEMBERSHIPS */
 @import url("pages/sign-form-memberships.css");
+@import url("pages/supporter.css");
+
 
 /* MISC */
 @import url("pages/contact.css");
