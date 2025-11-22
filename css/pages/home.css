@@ -30,7 +30,7 @@
 ---------------------------------------------*/
 .trade-eat-live {
     line-height: 1.2;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .trade-eat-live h2 {
     font-size: 30px;
@@ -59,7 +59,6 @@
 ---------------------------------------------*/
 /* LEFT */
 .get-the-app {
-    margin-top: -30px;
     padding-left: 120px;
 }
 .get-the-app .row-inner {
@@ -86,7 +85,7 @@
 /* phone shadow */
 .phone-shadow {
     position: absolute;
-    bottom: -310px;
+    bottom: -380px;
     left: 350px;
     transform: none;
     width: 320px;
@@ -178,7 +177,7 @@
 --------------- FOOD ANALYSIS
 ------------------------------------------*/
 .food-analysis {
-    margin-top: 180px;
+    margin-top: 150px;
     margin-bottom: 80px;
     display: flex;
     justify-content: center;
@@ -194,6 +193,7 @@
     font-size: 30px;
     font-weight: 800;
     color: #004000;
+    margin-bottom: -20px;
 }
 .food-icon {
     position: absolute;
